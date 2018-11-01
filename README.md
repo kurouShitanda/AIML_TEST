@@ -1,2 +1,2 @@
 # bot_playground
-botをどうつくるかいろいろためす
+bot試し
