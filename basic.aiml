@@ -1,0 +1,31 @@
+<!-- aimlタグ -->
+<!-- aimlタグは任意でバージョン情報を入れる。
+１ファイルはの1つのaimlタグを持つ
+決まりごと：中にはcategoryタグが必ずひとつは必要 -->
+<aiml version="1.0.1" encoding="UTF-8">
+    <!-- categoryタグ -->
+    <!-- categoryは基本的な知識単位 -->
+    <!-- ユーザーの入力（ワイルドカード使用可）や、ユーザーへのレスポンスを含む。
+    また、文脈情報を入れることもできる。 -->
+    <!-- 決まりごと：カテゴリータグは必ずpatternタグとtemplateタグが必要。 -->
+    <category>
+        <!-- patternタグ -->
+        <!-- ユーザーの入力を入れる。categoryタグの最初のタグである必要がある。 -->
+        <!-- AIMLは大文字小文字の区別をしないことに注意。 -->
+        <pattern>こんにちは</pattern>
+        <!-- templateタグ -->
+        <!-- ボットのレスポンスになる。categoryの2番目のタグである必要がある。 -->
+        <!-- データ保存、ほかのプログラムを呼ぶ、条件付の応答、ほかのcategoryへ処理を委譲したりできる。-->
+        <template>
+            こんにちは！
+        </template>
+    </category>
+
+    <category>
+        <pattern>あなたは何ですか？</pattern>
+        <template>
+            私はボットだ。アホ！
+        </template>
+    </category>
+
+</aiml>

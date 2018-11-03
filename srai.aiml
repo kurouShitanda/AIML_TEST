@@ -1,0 +1,47 @@
+<!-- srai -->
+<!-- シンボル簡約、分割統治、同義語解決、キーワード検知で使用する。 -->
+<aiml version="1.0.1" encoding="UTF-8">
+  <!-- 1 シンボル簡約 -->
+  <category>
+      <pattern>夏目漱石って誰？</pattern>
+      <template>
+        夏目漱石は明治時代の小説家だよ。
+      </template>
+  </category>
+  <category>
+      <pattern>タコ社長って誰？</pattern>
+      <template>
+        タコ社長は男はつらいよの登場人物で、印刷会社「朝日印刷所」の社長で寅次郎の幼馴染の桂梅太郎だよ。
+      </template>
+  </category>
+
+  <category>
+      <pattern>*って誰か知ってる？</pattern>
+      <template>
+        <srai><star/>って誰？</srai>
+      </template>
+  </category>
+</aiml>
+
+<!--
+以下は補記。
+AIML2.0を使っているpandrabotsのドキュメントより
+https://www.pandorabots.com/docs/aiml/aiml-fundamentals.html
+
+・sraiは何の略語かは特に共通の認識は無い模様。
+　srは以下のようなものが候補らしい。
+ "stimulus-response"（刺激反応)
+ ※ 行動心理学の刺激反応理論から？まあbotの応答はそういうものか。）
+
+ "syntactic rewrite"(文法的書換)
+
+ "symbolic reduction"（シンボルの簡約）
+ ※共通化によるパターンの削減を指すはず。だから、簡約が訳語としてふさわしいと考える。
+
+ "simple recursion" (単純再帰)
+ ※どういう意味のsimpleなのかはわかってない。単に根が浅いからか？
+
+ "synonym resolution"(同義語解決)
+
+ aiは人工知能のことだと思われる。
+ -->

@@ -1,0 +1,19 @@
+<!-- star-->
+<aiml version="1.0.1" encoding="UTF-8">
+    <category>
+        <!-- ワイルドカードの使用 -->
+        <!-- *でひとつの単語になる。そのため、日本語の場合は形態素解析しておく必要がある。 -->
+        <pattern>私は * で * ました</pattern>
+        <template>
+          <!-- starタグの使用. -->
+          <!-- pattern内の*を応答に使用する。 -->
+          <!-- index属性で*の場所を指定できる。 -->
+          まさか本当に<star index = "1"/>で<star index = "2"/>たんですか？
+        </template>
+    </category>
+</aiml>
+
+<!-- ※スペース無しで*を使う例が
+http://alicebot.wikidot.com/aiml:adv:1-aiml
+にあるが、python-aimlでは動かない。ほかのパーサーでは挙動が違うのかもしれない。
+-->
