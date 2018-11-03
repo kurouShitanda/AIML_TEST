@@ -1,2 +1,2 @@
-# bot_playground
-bot試し
+# AIMLのテスト
+pythonでAIMLを試す
