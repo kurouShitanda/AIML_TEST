@@ -16,7 +16,7 @@
   </category>
 
   <category>
-      <pattern>*って誰か知ってる？</pattern>
+      <pattern>* って誰か知ってる？</pattern>
       <template>
         <srai><star/>って誰？</srai>
       </template>
