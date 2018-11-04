@@ -1,0 +1,24 @@
+<!-- condition -->
+<aiml version="1.0.1" encoding="UTF-8">
+  <category>
+     <pattern>今日はどう？</pattern>
+
+     <template>
+        <!-- ランダムに状態をセットしておく -->
+        <random>
+          <li><think><set name = "state">happy</set></think></li>
+          <li><think><set name = "state">sad</set></think></li>
+        </random>
+
+        <!-- 状態に応じて返答を変える -->
+        <condition name = "state" value = "happy">
+           私は元気^^
+        </condition>
+        <condition name = "state" value = "sad">
+           悲しい;;
+        </condition>
+
+     </template>
+
+  </category>
+</aiml>

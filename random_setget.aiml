@@ -1,0 +1,29 @@
+<!-- random, set, get-->
+<aiml version="1.0.1" encoding="UTF-8">
+  <!-- random -->
+  <category>
+    <pattern>こんにちは！</pattern>
+    <template>
+      <random>
+         <!-- li（listの略）でランダムに返す選択肢を列挙する。 -->
+         <li> こんにちは！ </li>
+         <li> ハーイ！ナイストゥミーチュー！ </li>
+      </random>
+    </template>
+  </category>
+
+  <!-- set, get -->
+  <category>
+     <pattern>私は *</pattern>
+     <template>
+        こんにちはー <set name = "username"> <star/>さーん! </set>
+     </template>
+  </category>
+
+  <category>
+     <pattern>おやすみー</pattern>
+     <template>
+        <get name = "username"/> おやすー！
+     </template>
+  </category>
+</aiml>

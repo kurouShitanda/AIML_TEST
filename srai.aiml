@@ -104,10 +104,10 @@ https://www.pandorabots.com/docs/aiml/aiml-fundamentals.html
  "syntactic rewrite"(文法的書換)
 
  "symbolic reduction"（シンボルの簡約）
- ※共通化によるパターンの削減を指すはず。だから、簡約が訳語としてふさわしいと考える。
+ ※共通化によるパターンの削減を指すはず。だから、簡約が訳語としてふさわしい？
 
  "simple recursion" (単純再帰)
- ※どういう意味のsimpleなのかはわかってない。単に根が浅いからか？
+ ※どういう意味のsimpleなのかはわかってない。
 
  "synonym resolution"(同義語解決)
 

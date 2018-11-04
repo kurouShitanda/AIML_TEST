@@ -1,0 +1,21 @@
+<!-- that -->
+<aiml version="1.0.1" encoding="UTF-8">
+  <category>
+     <pattern>映画に興味ある？</pattern>
+     <template>コメディー映画は好き？</template>
+  </category>
+
+  <category>
+     <pattern>うん</pattern>
+     <!-- thatタグで前のレスポンスをした場合に紐付ける。 -->
+     <!-- 紐づいたレスポンスの直後でなければ反応しない -->
+     <that>コメディー映画は好き？</that>
+     <template>タイタニックとか傑作だよね！</template>
+  </category>
+
+  <category>
+     <pattern>いや</pattern>
+     <that>コメディー映画は好き？</that>
+     <template>タイタニックはおすすめだよ！</template>
+  </category>
+</aiml>

@@ -1,0 +1,21 @@
+<!-- topic -->
+<aiml version="1.0.1" encoding="UTF-8">
+  <category>
+     <pattern>映画について議論しましょう</pattern>
+     <!-- setタグでtopicを映画にする -->
+     <template>はい <set name = "topic">映画</set>ね</template>
+  </category>
+
+  <!-- topicが映画の場合のレスポンスを定義できる -->
+  <topic name = "映画">
+     <category>
+        <pattern>*</pattern>
+        <template>いい映画はリフレッシュになるよね</template>
+     </category>
+
+     <category>
+        <pattern>コメディー映画が好き</pattern>
+        <template>私もタイタニックが好き！</template>
+     </category>
+  </topic>
+</aiml>

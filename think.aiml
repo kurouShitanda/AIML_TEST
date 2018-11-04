@@ -1,0 +1,19 @@
+<!-- think -->
+<aiml version="1.0.1" encoding="UTF-8">
+  <category>
+     <pattern>私の 名前は *</pattern>
+     <template>
+        こんにちは！
+        <!-- thinkタグで変数を保存 -->
+        <think><set name = "username"><star/></set></think>
+     </template>
+  </category>
+
+  <category>
+     <pattern>さようならー</pattern>
+     <template>
+       <!-- usernameがセットされていればusernameを付加する -->
+        やあ！ <get name = "username"/> ありがとね！
+     </template>
+  </category>
+</aiml>
