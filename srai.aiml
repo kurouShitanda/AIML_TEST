@@ -21,6 +21,74 @@
         <srai><star/>って誰？</srai>
       </template>
   </category>
+
+  <!-- 2 分割統治 -->
+  <category>
+      <pattern>さようなら</pattern>
+      <template>
+        さよなら！
+      </template>
+  </category>
+  <category>
+      <pattern>さようなら *</pattern>
+      <template>
+        <srai>さようなら</srai>
+      </template>
+  </category>
+
+  <!-- 3 同義語解決 -->
+  <category>
+      <pattern>苦しい</pattern>
+      <template>
+        だいじょうぶ？
+      </template>
+  </category>
+  <category>
+      <pattern>つらい</pattern>
+      <template>
+        <srai>苦しい</srai>
+      </template>
+  </category>
+
+  <!-- 4 キーワード検知 -->
+  <!--
+    *は単語（or複数単語）がマッチしない場合にマッチする。
+    _は単語がマッチしてもマッチされる。
+   -->
+  <category>
+   <pattern>お菓子</pattern>
+   <template>うん、大好きさ！</template>
+  </category>
+
+  <category>
+     <pattern>_ お菓子</pattern>
+     <template>
+        <srai>お菓子</srai>
+     </template>
+  </category>
+
+  <category>
+     <pattern>お菓子 *</pattern>
+     <template>
+        <srai>お菓子</srai>
+     </template>
+  </category>
+
+  <category>
+     <pattern>_ お菓子 *</pattern>
+     <template>
+        <srai>お菓子</srai>
+     </template>
+  </category>
+
+  <!-- *と_に注意する。 -->
+  <!-- _は優先度が高いので、別のパターンを上書きしてしまう。 -->
+  <!-- <category>
+     <pattern>お菓子 _</pattern>
+     <template>
+        お菓子好きじゃないよ！
+     </template>
+  </category> -->
 </aiml>
 
 <!--
